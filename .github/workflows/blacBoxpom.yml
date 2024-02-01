@@ -1,0 +1,26 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - BlackBox
+  pull_request:
+
+jobs:
+  cypress-tests-Modelo:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install modules
+        run: npm install
+      - name: Run end-to-end tests on desktop viewport 🧪
+        uses: cypress-io/github-action@v5
+        env:
+          CYPRESS_USERNAME: ${{ secrets.CYPRESS_USERNAME }}
+          CYPRESS_PASSWORD: ${{ secrets.CYPRESS_PASSWORD }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        with:
+          command: npm test  
+                    
+  
