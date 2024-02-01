@@ -3,7 +3,7 @@ name: Test White Box
 on:
   push:
     branches:
-      - WhiteBox
+      - main
   pull_request:
 
 jobs:

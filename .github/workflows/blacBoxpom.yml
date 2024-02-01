@@ -3,7 +3,7 @@ name: Test Black Box
 on:
   push:
     branches:
-      - BlackBox
+      - main
   pull_request:
 
 jobs:
