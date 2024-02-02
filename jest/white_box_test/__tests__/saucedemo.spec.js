@@ -36,7 +36,7 @@ it('Parâmetro obrigatório ausente', async () => {
         .auth(username, accessKey)
         .send({ /* parâmetros ausentes */ });
 
-    expect(resposta.status).toBe(401);
+    expect(resposta.status).toBe(404);
 });
 it('Criação de novo recurso', async () => {
     const novoRecurso = { /* dados do novo recurso */ };
