@@ -1,0 +1,29 @@
+Objetivo do Projeto
+Este projeto é um modelo de teste automatizado que visa fornecer uma base sólida para a implementação de testes de ponta a ponta, 
+integração e unidade em aplicações web e APIs. Utilizamos várias bibliotecas e frameworks de teste para garantir que nossos testes sejam robustos, confiáveis e fáceis de manter.
+
+Dependências Principais
+Cypress (versão 13.6.3)
+O Cypress é a principal ferramenta de teste de ponta a ponta utilizada neste projeto. Ele nos permite escrever testes de maneira fácil e rápida, com suporte para JavaScript
+e TypeScript. Com recursos como paralelização de testes e gravação de vídeos, o Cypress torna os testes mais eficientes e menos propensos a erros.
+
+Mocha (versão 10.2.0)
+Mocha é um framework de teste flexível que complementa o Jest, sendo ideal para testes unitários e de integração em projetos Node.js. Sua flexibilidade permite adaptar os testes 
+às necessidades específicas do projeto.
+
+Mochawesome (versão 7.1.3), Mochawesome-Merge (versão 4.3.0) e Mochawesome-Report-Generator (versão 6.2.0)
+Essas bibliotecas são utilizadas para gerar relatórios de teste detalhados e visualmente atraentes. Eles melhoram a compreensão dos resultados dos testes, facilitando a identificação
+de problemas e a análise do estado geral dos testes.
+
+Moment (versão 2.29.4)
+Moment.js é uma biblioteca essencial para lidar com datas e horas em nossos testes. Ela fornece uma API conveniente para manipular e exibir datas e horas, o que é crucial para testar
+funcionalidades relacionadas ao tempo.
+
+Jest (versão 29.7.0)
+Jest é utilizado para testes unitários e de integração, proporcionando uma ampla gama de tipos de teste e um recurso de mocking integrado. Isso facilita a simulação de funções
+e módulos, permitindo testar componentes isoladamente e em conjunto com outras partes do sistema.
+
+Supertest (versão 6.3.4)
+Supertest é uma biblioteca especializada para testar APIs HTTP. Ela permite realizar requisições HTTP e verificar as respostas, garantindo que nossas APIs estejam funcionando
+conforme esperado.
+
